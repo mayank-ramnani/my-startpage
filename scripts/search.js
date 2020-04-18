@@ -6,7 +6,7 @@ searchbox.addEventListener("keydown", function(e) {
 });
 
 async function get_search_engines() {
-	let search_engines = await (await fetch("../config/search-engines.json")).json();
+	let search_engines = await (await fetch("config/search-engines.json")).json();
 	return search_engines; 
 }
 
