@@ -16,7 +16,7 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	
+	overflow: hidden;
 }
 
 .background {
@@ -30,6 +30,7 @@ body {
 	background-size: cover;
 	filter: blur(2px);
 	background-image: url("../images/bg.jpg");
+	transform: scale(1.01);
 }
 
 .searchbox {
