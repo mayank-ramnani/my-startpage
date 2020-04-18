@@ -4,6 +4,10 @@
 	src: url("../fonts/OpenSans-Regular.ttf");
 }
 
+.hide {
+	display: none;
+}
+
 html {
 	height: 100%;
 	font-family: "Open Sans";
@@ -75,19 +79,31 @@ body {
 	border-color: rgb(200, 200, 250, 0.5);
 }
 
-div.credits {
-	bottom: 10px;
+.helpbox {
+	background-color: rgb(0,0,0, 0.7);
+	color: whitesmoke;
+	padding: 10px;
 }
 
-a {
+.helpbox tr {
+	padding: 4px;
+}
+
+footer {
+	display: flex;
+}
+
+.credits a, 
+.help a {
 	background-color: rgb(0,0,0, 0.7);
 	padding: 5px;
 	color: cornflowerblue;
 	text-decoration: none;
+	margin: 4px;
+	cursor: pointer;
 }
 
 /* separate out stylesheet for credits */
-
 .credits-body {
 	display: flex;
 	justify-content: center;

@@ -12,10 +12,37 @@
 			<input type="input" name="search" placeholder="Search" class="search-text" id="search" autocomplete="off" autofocus="">
 			<button type="submit" onclick="search()"></button>
 		</div>
-
-		<div class="credits">
-			<a href="credits.html">credits</a>
+		<div class="helpbox js-helpbox hide">
+			<table>
+				<tr>
+					<th>Search Engine</th>
+					<th>Command</th>
+				</tr>
+				<tr>
+					<td>Google Search (Default)</td>
+					<td>!search</td>
+				</tr>
+				<tr>
+					<td>Youtube</td>
+					<td>!yt</td>
+				</tr>
+				<tr>
+					<td>Attivo Trac</td>
+					<td>!trac</td>
+				</tr>
+			</table>
 		</div>
+
+		<footer>
+			<div class="help">
+				<a onclick="toggle_help()">help</a>
+			</div>
+			<div class="credits">
+				<a href="credits.html">credits</a>
+			</div>
+		</footer>
+		
+		<script src="./scripts/main.js"></script>
 		<script src="./scripts/search.js"></script>
 	</body>
 </html>

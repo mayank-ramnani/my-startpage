@@ -1,6 +1,4 @@
-// const search_engines = getJson("enginesList.json");
-let searchbox = document.getElementById("search");
-// 	  urlRegex		= /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/;
+var searchbox = document.getElementById("search");
 
 // Handle "enter" key press
 searchbox.addEventListener("keydown", function(e) {
@@ -47,6 +45,8 @@ async function search() {
 		focus(searchbox);
 	}
 }
+
+// add support for toggling help using '?'
 
 // todo:
 // 1. shake animation on wrong input
