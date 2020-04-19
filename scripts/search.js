@@ -19,7 +19,13 @@ async function get_search_engines() {
 
 async function search() {
 	console.log("searching ..");
-	const search_engines = await get_search_engines();
+	let search_engines;
+	try{
+		search_engines = await get_search_engines();
+	}
+	catch{
+		console.log("unable to fetch search engines");
+	}
 
 	let query = searchbox.value;
 	// split words and find out the search engine id needed
@@ -39,7 +45,7 @@ async function search() {
 	}
 	
 	// get the engine base url from id
-	let engine_url = search_engines[engine_id];
+	let engine_url = search_engines ? search_engines[engine_id] : "https://www.google.com/search?q=";
 	// get the search string
 	let query_url = engine_url + query;
 
