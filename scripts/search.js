@@ -5,8 +5,15 @@ searchbox.addEventListener("keydown", function(e) {
 	e.keyCode === 13 ? search() : false;
 });
 
+// Returns without trailing slash
+function get_current_url() {
+	const current_url = window.location.href;
+	if (current_url[-1] == "/") return current_url.slice(0,-1);
+	else return current_url;
+}
+
 async function get_search_engines() {
-	let search_engines = await (await fetch("../config/search-engines.json")).json();
+	let search_engines = await (await fetch(get_current_url() + "/config/search-engines.json")).json();
 	return search_engines; 
 }
 
