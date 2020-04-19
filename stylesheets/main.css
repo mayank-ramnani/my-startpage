@@ -33,7 +33,9 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	filter: blur(2px);
-	background-image: url("../images/bg.jpg");
+	/* background-image: url("../images/bg.jpg"); */
+	background-image: url("../images/bg-2.jpg");
+
 	transform: scale(1.01);
 }
 
@@ -44,7 +46,7 @@ body {
 	height: 75px;
 	/* margin: 5em auto; */
 	padding: 0 20px;
-	background-color: rgba(0, 0, 0, .8);
+	background-color: rgba(0, 0, 0, .7);
 	justify-content: space-between;
 	border-radius: 10px;
 }
@@ -55,6 +57,7 @@ body {
 	border: #000 0px;
 	font-size: 3em;
 	color: #fff;
+	opacity: 0.7;
 }
 
 .search-text:hover, .search-text:focus {
@@ -87,6 +90,12 @@ body {
 
 .helpbox tr {
 	padding: 4px;
+	margin-right: 4px;
+}
+
+.helpbox th,
+.helpbox td {
+	padding-right: 24px;
 }
 
 footer {
@@ -94,9 +103,10 @@ footer {
 }
 
 .credits a, 
-.help a {
+.help a,
+.credits-box a{
 	background-color: rgb(0,0,0, 0.7);
-	padding: 5px;
+	padding: 4px;
 	color: cornflowerblue;
 	text-decoration: none;
 	margin: 4px;
@@ -108,14 +118,13 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: red;
 }
 
 .credits-box {
 	max-width: 600px;
 	display: flex;
+	padding: 16px;
 	flex-direction: column;
-	/* align-items: center; */
 	justify-content: center;
 	text-align: center;
 	background-color: rgb(0,0,0, 0.7);
@@ -125,4 +134,5 @@ footer {
 .credit-element {
 	justify-content: center;
 	align-items: center;
+	padding: 4px;
 }
